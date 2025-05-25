@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>CV - Muhammad Arifin</title>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+        }
+    </script>
+</head>
+
+<body class="dark bg-gray-900 text-gray-100 min-h-screen relative overflow-x-hidden">
+    <!-- Elemen Blur di kanan atas -->
+    <div
+        class='fixed left-3/4 right-0 top-0 -z-10 hidden h-40 bg-gradient-to-bl from-primary to-background to-80% blur-[5.25rem] supports-[filter:blur(0)]:block'>
+    </div>
+
+    <div
+        class='fixed left-3/4 right-0 top-52 -z-10 hidden h-20 bg-gradient-to-bl from-violet-500 to-background to-80% blur-[5.25rem] supports-[filter:blur(0)]:block'>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 bg-gray-800/80 backdrop-blur-md z-50 border-b border-gray-700">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <h1 class="text-2xl font-bold text-blue-400">Muhammad Arifin</h1>
+                <div class="space-x-6">
+                    <a href="#about" class="hover:text-blue-400 transition-colors">Tentang</a>
+                    <a href="#experience" class="hover:text-blue-400 transition-colors">Pengalaman</a>
+                    <a href="#portfolio" class="hover:text-blue-400 transition-colors">Portfolio</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mx-auto px-6 py-12 relative z-10">
+        <!-- Header Section dengan Foto Profil -->
+        <header class="text-center mb-16">
+            <!-- Komentar: Ini adalah bagian header dengan foto profil -->
+            <div class="mb-8">
+                <img src="./images/muhammad-arifin.jpg" alt="Foto Profil Muhammad Arifin"
+                    class="w-48 h-48 rounded-full mx-auto border-4 border-blue-400 shadow-2xl object-cover">
+            </div>
+
+            <h1
+                class="text-5xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">
+                Muhammad Arifin
+            </h1>
+            <h2 class="text-2xl text-gray-300 mb-6">Frontend Engineer</h2>
+        </header>
+
+        <!-- About Section -->
+        <section id="about" class="mb-16">
+            <h2 class="text-4xl font-bold mb-8 text-center">Tentang Saya</h2>
+
+            <!-- Paragraf Deskripsi Diri -->
+            <div class="grid md:grid-cols-1 items-center">
+                <div>
+                    <p class="text-lg text-gray-300 mb-6 leading-relaxed">
+                        <!-- Komentar: Paragraf pertama deskripsi diri -->
+                        Saya adalah seorang Full Stack Developer yang berpengalaman lebih dari 2 tahun dalam industri
+                        teknologi.
+                        Keahlian saya mencakup pengembangan aplikasi web modern menggunakan teknologi terdepan seperti
+                        React,
+                        Node.js, dan berbagai framework populer. Saya memiliki passion yang besar dalam menciptakan
+                        solusi
+                        digital yang tidak hanya fungsional, tetapi juga memberikan pengalaman pengguna yang luar biasa.
+                    </p>
+
+                    <p class="text-lg text-gray-300 mb-6 leading-relaxed">
+                        <!-- Komentar: Paragraf kedua deskripsi diri -->
+                        Selain coding, saya juga memiliki background yang kuat dalam UI/UX design. Kombinasi kemampuan
+                        teknis
+                        dan desain ini memungkinkan saya untuk memahami proyek dari perspektif yang holistik - mulai
+                        dari
+                        konsep desain hingga implementasi teknis. Saya selalu mengutamakan clean code, performance
+                        optimization,
+                        dan user-centered design dalam setiap project yang saya kerjakan.
+                    </p>
+                </div>
+
+                <div class="space-y-6">
+                    <!-- Skills List -->
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-4 text-blue-400">Keahlian Utama</h3>
+                        <ul class="space-y-2 text-gray-300">
+                            <li class="flex items-center">
+                                <span class="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>
+                                JavaScript, TypeScript
+                            </li>
+                            <li class="flex items-center">
+                                <span class="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>
+                                React, Angular2, Next.js
+                            </li>
+                            <li class="flex items-center">
+                                <span class="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>
+                                Node.js, Express
+                            </li>
+                            <li class="flex items-center">
+                                <span class="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>
+                                Figma
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section dengan Tabel -->
+        <section id="experience" class="mb-16">
+            <h2 class="text-4xl font-bold mb-8 text-center">Pengalaman Kerja</h2>
+
+            <!-- Tabel Pengalaman Kerja -->
+            <div class="overflow-x-auto mb-12">
+                <table class="w-full bg-gray-800 rounded-lg overflow-hidden shadow-lg">
+                    <thead class="bg-gray-700">
+                        <tr>
+                            <th class="px-6 py-4 text-left text-blue-400 font-semibold">Posisi</th>
+                            <th class="px-6 py-4 text-left text-blue-400 font-semibold">Perusahaan</th>
+                            <th class="px-6 py-4 text-left text-blue-400 font-semibold">Periode</th>
+                            <th class="px-6 py-4 text-left text-blue-400 font-semibold">Lokasi</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-700">
+                        <tr class="hover:bg-gray-700 transition-colors">
+                            <td class="px-6 py-4 font-medium">Frontend Engineer</td>
+                            <td class="px-6 py-4 text-gray-300">PT Bank Mandiri (Persero) Tbk.</td>
+                            <td class="px-6 py-4 text-gray-300">2022 - 2024</td>
+                            <td class="px-6 py-4 text-gray-300">Jakarta</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </section>
+
+        <!-- Education Section dengan Tabel -->
+        <section id="education" class="mb-16">
+            <!-- Tabel Pendidikan -->
+            <h2 class="text-4xl font-bold mb-8 text-center">Pendidikan</h2>
+            <div class="overflow-x-auto">
+                <table class="w-full bg-gray-800 rounded-lg overflow-hidden shadow-lg">
+                    <thead class="bg-gray-700">
+                        <tr>
+                            <th class="px-6 py-4 text-left text-blue-400 font-semibold">Gelar</th>
+                            <th class="px-6 py-4 text-left text-blue-400 font-semibold">Institusi</th>
+                            <th class="px-6 py-4 text-left text-blue-400 font-semibold">Tahun</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-700">
+                        <tr class="hover:bg-gray-700 transition-colors">
+                            <td class="px-6 py-4 font-medium">S1 Informatika</td>
+                            <td class="px-6 py-4 text-gray-300">Universitas Siber Asia</td>
+                            <td class="px-6 py-4 text-gray-300">2024 - Sekarang</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="mb-16">
+            <h2 class="text-4xl font-bold mb-8 text-center">Portfolio</h2>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                <a href="https://github.com/emhaarifin/React-Blanja" target="_blank">
+                    <div
+                        class="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:transform hover:scale-105 transition-transform">
+                        <img src="https://media.licdn.com/dms/image/v2/C4E22AQHM-X_nh72bvQ/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1633058547566?e=1750896000&v=beta&t=EpybvGRIwfaZD8rO6G1oO-_iFZCc57m9Wth08IuRJvI"
+                            alt="E-commerce Platform" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2 text-blue-400">Blanja</h3>
+                            <p class="text-gray-300 text-sm">Aplikasi e-commerce dengan React dan Node.js</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://github.com/emhaarifin/zwallet-react" target="_blank">
+                    <div
+                        class="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:transform hover:scale-105 transition-transform">
+                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=400&h=250&fit=crop"
+                            alt="Mobile App" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2 text-blue-400">Zwallet</h3>
+                            <p class="text-gray-300 text-sm">Aplikasi dompet digital dengan midtrans</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://github.com/emhaarifin/Tele-React" target="_blank">
+                    <div
+                        class="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:transform hover:scale-105 transition-transform">
+                        <img src="https://res.cloudinary.com/emhaarifin/image/upload/v1632168248/github/telegram/Screen_Shot_2021-09-21_at_00.35.19_rnn4vt.png"
+                            alt="Dashboard Analytics" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2 text-blue-400">Telegram Clone</h3>
+                            <p class="text-gray-300 text-sm">Aplikasi pengiriman pesan secara langsung dengan socket-io
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+        </section>
+
+        <!-- Links Section -->
+        <section id="links" class="mb-16">
+            <div class="text-center">
+                <h2 class="text-4xl font-bold mb-8 text-center">Links Penting</h2>
+                <div class="flex flex-wrap justify-center gap-6">
+                    <a href="https://github.com/emhaarifin" target="_blank"
+                        class="bg-gray-800 hover:bg-gray-700 px-6 py-3 rounded-lg transition-colors border border-gray-600 hover:border-blue-400">
+                        🔗 GitHub Portfolio
+                    </a>
+                    <a href="https://linkedin.com/in/mharifin" target="_blank"
+                        class="bg-gray-800 hover:bg-gray-700 px-6 py-3 rounded-lg transition-colors border border-gray-600 hover:border-blue-400">
+                        💼 LinkedIn Profile
+                    </a>
+                    <a href="#contact" class="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg transition-colors">
+                        📧 Hubungi Saya
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section dengan List -->
+        <section class="mb-16">
+            <h2 class="text-4xl font-bold mb-8 text-center">Sertifikasi</h2>
+
+            <div class="grid gap-12 justify-center-center">
+                <div>
+                    <ol class="space-y-3 text-gray-300">
+                        <li class="flex items-start">
+                            <span
+                                class="bg-blue-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm mr-3 mt-0.5">1</span>
+                            <div>
+                                <strong>UI/UX Research & Design</strong>
+                                <p class="text-sm text-gray-400">Binar Academy - 2021</p>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+
+
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="text-center bg-gray-800 rounded-lg p-12">
+            <!-- Komentar: Section kontak dengan background yang berbeda -->
+            <h2 class="text-4xl font-bold mb-6">Mari Berkolaborasi!</h2>
+            <p class="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+                Saya selalu terbuka untuk proyek menarik dan peluang kolaborasi. <br>
+                <mark class="bg-blue-600 text-white px-2 py-1 rounded">Hubungi saya</mark>
+                untuk diskusi lebih lanjut!
+            </p>
+
+            <div class="flex flex-wrap justify-center gap-6 text-lg">
+                <div class="flex items-center space-x-2">
+                    <span>📧</span>
+                    <a href="mailto:101muhammadarifin@gmail.com">
+
+                        <span>101muhammadarifin@gmail.com</span>
+                    </a>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <span>📍</span>
+                    <span>Jakarta, Indonesia</span>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-center py-8 mt-16 border-t border-gray-700">
+        <p class="text-gray-400">
+            © 2025 Muhammad Arifin. All rights reserved.
+            <small>Built with ❤️ and lots of ☕</small>
+        </p>
+    </footer>
+
+    <!-- Smooth scrolling script -->
+    <script>
+        // Smooth scrolling untuk navigasi
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+
+                if (target) {
+                    const navbarHeight = document.querySelector('nav')?.offsetHeight || 0;
+                    const elementTop = target.getBoundingClientRect().top + window.pageYOffset;
+                    const offsetTop = elementTop - navbarHeight;
+
+                    window.scrollTo({
+                        top: offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
